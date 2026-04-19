@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Classifier | Identify Anything in Photos</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- TensorFlow.js and MobileNet model -->
+    <!-- More reliable CDN links -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.18.0/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.0/dist/mobilenet.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📸 AI Image Classifier</h1>
+            <p>Upload a photo and AI will identify what's in it</p>
+        </header>
+
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">🖼️</div>
+            <p>Drag & drop an image here or click to browse</p>
+            <input type="file" id="imageInput" accept="image/*" hidden>
+            <button class="browse-btn" id="browseBtn">Choose File</button>
+        </div>
+
+        <div class="preview-container" id="previewContainer" style="display: none;">
+            <img id="previewImage" alt="Preview">
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Analyzing image...</p>
+            </div>
+        </div>
+
+        <div class="results" id="results" style="display: none;">
+            <h2>🔍 Predictions</h2>
+            <div class="predictions-list" id="predictionsList"></div>
+        </div>
+
+        <footer>
+            <p>Powered by TensorFlow.js & MobileNet | Runs entirely in your browser</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
