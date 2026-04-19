@@ -1,12 +1,12 @@
-# 📸 AI Image Classifier
+# AI Image Classifier
 
 A browser-based image classification web app that uses TensorFlow.js and MobileNet to identify objects in photos. **Runs entirely in your browser** - no server, no API keys, no data leaves your device.
 
-## 🚀 Live Demo
+## Live Demo
 
-[Add your Netlify/Vercel link here after deployment]
+https://clever-marshmallow-087938.netlify.app/
 
-## ✨ Features
+## Features
 
 - **Instant AI Recognition** - Upload any photo and get predictions immediately
 - **Privacy First** - All processing happens locally in your browser
@@ -15,13 +15,13 @@ A browser-based image classification web app that uses TensorFlow.js and MobileN
 - **Confidence Scores** - See how confident the AI is for each prediction
 - **Mobile Responsive** - Works on phones and tablets
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - HTML5, CSS3, JavaScript (ES6+)
 - TensorFlow.js - ML in the browser
 - MobileNet - Pre-trained image classification model
 
-## 📦 Local Development
+## Local Development
 
 1. Clone the repository:
 ```bash
